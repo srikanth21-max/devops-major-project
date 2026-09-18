@@ -1,0 +1,17 @@
+db:
+  image: postgres:15-alpine
+  user: postgres
+  password: postgres
+  database: mydb
+  port: 5432
+
+backend:
+  image: devops-major-project-backend
+  port: 5000
+  replicas: 1
+
+frontend:
+  image: devops-major-project-frontend
+  port: 80
+  nodePort: 30080
+  replicas: 1

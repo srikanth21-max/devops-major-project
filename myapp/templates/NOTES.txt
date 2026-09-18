@@ -1,0 +1,8 @@
+Your app "{{ .Release.Name }}" has been deployed!
+
+Frontend: http://localhost:{{ .Values.frontend.nodePort }}
+Backend:  running on port {{ .Values.backend.port }}
+Database: running on port {{ .Values.db.port }}
+
+To check status, run:
+  kubectl get pods
