@@ -8,7 +8,7 @@ db:
 backend:
   image: devops-major-project-backend
   port: 5000
-  replicas: 1
+  replicas: 2
 
 frontend:
   image: devops-major-project-frontend
